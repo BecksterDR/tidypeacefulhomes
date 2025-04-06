@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidy Peaceful Homes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Josefin Sans', sans-serif; margin: 0; padding: 0; background: #83bcd6; }
+        header { background: #e69d6a; color: white; text-align: center; padding: 5px; }
+        header h1 { font-family: 'Gochi Hand', cursive; font-size: 80px; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+        header h2 { font-family: 'Josefin Sans', cursive; font-size: 40px; margin-top: -40px; }
+        section {
+            padding: 0px;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            background-color: #00000010;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-items: center;
+            width: auto;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 350px;
+        }
+        footer { background: #ffffff; color: 000000; text-align: center; padding: 1rem; margin-top: 20px; }
+        .logo { display: block; margin: 0 auto 10px; max-width: 350px; }
+
+        .section-title {            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        .section-title img { width: 50px; height: auto; margin: 0 10px; }
+        #about-us p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2; /* Increase line spacing */
+            font-size: 25px; /* Match other sections */
+            font-weight: normal; /* Optional: Make the text normal weight */
+        }
+        #about-us ul {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.2; /* Increase line spacing */
+            font-size: 20px; /* Keep list font sizes consistent */   
+        }
+        #pricing p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px;
+        }
+        #pricing h3, #storage-solutions h3 {
+            font-size: 24px; /* Ensure consistency */
+            margin-top: 20px;
+            text-align: center;
+        }
+        #storage-solutions p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px; /* Ensure consistency */
+        }
+        #services p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px; /* Match other sections */
+        }
+        #services ul {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.2;
+            font-size: 20px; /* Keep list font sizes consistent */
+        }
+        #services h3 {
+            font-size: 24px; /* Consistent with other h3 elements */
+            margin-top: 20px;
+            text-align: center;
+        }
+        #contact p {
+            font-size: 30px; /* Increase font size for email and phone */
+            font-weight: bold; /* Optional: Make the text bold */
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 10px; /* Add padding for better readability */
+            }
+            .gallery {
+                display: block;
+            }
+            .gallery img {
+                margin-bottom: 10px;
+                max-width: 100%; /* Ensure images scale to fit smaller screens */
+                height: auto;
+            }
+            header h1 {
+                font-size: 50px; /* Reduce header font size */
+            }
+            header h2 {
+                font-size: 24px; /* Adjust subheader font size */
+            }
+            .section-title h2 {
+                font-size: 20px; /* Adjust section title font size */
+            }
+            h3 {
+                font-size: 20px; /* Adjust h3 font size for smaller screens */
+            }
+            p, ul {
+                font-size: 18px; /* Adjust paragraph and list font size */
+            }
+            .contact-form input, .contact-form textarea, .contact-form button {
+                font-size: 16px; /* Adjust form input and button font size */
+            }
+            nav button {
+                font-size: 18px; /* Increase button font size for touch devices */
+                padding: 12px 20px; /* Add padding for better usability */
+            }
+            nav button + button {
+                margin-left: 10px; /* Add spacing between buttons */
+            }
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav button {
+            background-color: #00000010;
+            color: white;
+            border: 1px solid white; /* Add 1px white border */
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #83bcd6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo test.png" alt="Company Logo" class="logo">
+        <h1>Tidy Peaceful Homes</h1>
+        <h2> Professional Organizers</h2>
+        <nav>
+            <button onclick="document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });">About Us</button>
+            <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Services</button>
+            <button onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });">Pricing</button>
+            <button onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });">Gallery</button>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact</button>
+        </nav>
+    </header>
+    
+    <section id="about-us">
+        <div class="section-title">
+            <img src="images/picture test left.png" alt="Icon">
+            <h2>Let Us Organize Your Chaos Into Functionality</h2>
+            <img src="images/picture test right.png" alt="Icon">
+        </div>
+        <p>
+            We specialize in transforming chaotic spaces into calm, functional, and beautifully 
+            organized environments so you can spend less time stressing and more time enjoying your home.
+            Whether it’s a packed pantry, an overflowing closet, a cluttered bedroom, or a disorganized shed, 
+            we’re here to bring order to your everyday life.
+            We offer decluttering, space optimization, and personalized organization to fit your lifestyle 
+            and needs.
+        </p>
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <img src="images/picture test left.png" alt="Icon">
+            <h2>Our Services</h2>
+            <img src="images/picture test right.png" alt="Icon">
+        </div>
+        <h3>
+            Our professional home organization services include:</h3>
+            <ul>
+                <li><strong>Pantry & Kitchen Organization</strong> – Streamline your food storage, create zones, and make everything easily accessible.</li>
+                <li><strong>Closet Makeovers</strong> – From seasonal wardrobes to everyday essentials, we’ll maximize space and style.</li>
+                <li><strong>Bedroom & Living Space Refresh</strong> – Create serene, clutter-free zones that promote rest and relaxation.</li>
+                <li><strong>Garage & Shed Decluttering</strong> – Tackle tools, gear, and storage overflow with practical, efficient systems.</li>
+                <li><strong>Custom Storage Solutions & Space Planning</strong> – We help you make the most of every inch with tailored organization strategies.</li>
+                <li><strong>Decluttering & Downsizing</strong> – We help you sort through your belongings, decide what to keep, and find new homes for the rest.</li>
+                <li><strong>Office & Workspace Organization</strong> – Create a productive environment with efficient systems for paperwork, supplies, and equipment.</li>  
+            </ul>
+            <p> Though we are not a cleaning service, all our organization sessions include light trash removal, surface wipe-downs, dusting,
+                and sweeping/vacuuming of the area we are working in.
+            </p>
+    </section>
+
+    <section id="pricing">
+        <div class="section-title">
+            <img src="images/picture test left.png" alt="Icon">
+            <h2>Pricing</h2>
+            <img src="images/picture test right.png" alt="Icon">
+        </div>
+        <h3>Hourly Rate</h3>
+        <p>Our home organization services start at $40 dollars/hour. Since every space and project is a little different, 
+            the final rate may vary based on the size and complexity of the project, how many organizers are required to complete
+            your project in a timely manner, your custom storage needs, or any special requests. We'll walk through everything
+            during your free consultation and provide a clear, customized quote - no surprises, just transparent pricing and
+            thoughtful service.
+        </p>
+        <div id="storage-solutions">
+            <h3>Storage Solutions</h3>
+            <p>We offer a variety of storage solutions to complement your organization project. Whether you need bins, baskets, or 
+                non-permanent shelving, we can source the perfect options for your space. Pricing for 
+                storage solutions will be discussed during your consultation and is based on your specific needs and preferences.</p>
+        </div>
+    </section>
+    
+    <section id="gallery">
+        <div class="section-title">
+            <img src="images/picture test left.png" alt="Icon">
+            <h2>Check Out Our Work</h2>
+            <img src="images/picture test right.png" alt="Icon">
+        </div>
+        <div class="gallery">
+            <div>
+                <a href="images/Attic before and after oct 2022.jpg" target="_blank">
+                    <img src="images/Attic before and after oct 2022.jpg" alt="Attic Before and After - October 2022">
+                </a>
+                <p>Attic transformation</p>
+            </div>
+                        <div>
+                <a href="images/Shed before and after April 2025.jpg" target="_blank">
+                    <img src="images/Shed before and after April 2025.jpg" alt="Shed Before and After - April 2025">
+                </a>
+                <p>Consolidation of items from two sheds into one</p>
+            </div>
+                    </div>
+    </section>
+    
+    <section id="contact">
+        <div class="section-title">
+            <img src="images/picture test left.png" alt="Icon">
+            <h2>Contact Us</h2>
+            <img src="images/picture test right.png" alt="Icon">
+        </div>
+        <p>Email: tidypeacefulhomes@gmail.com</p>
+        <p>Phone: 757 392 7258</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tidy Peaceful Homes</p>
+    </footer>
+</body>
+</html>
