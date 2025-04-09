@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tidy Peaceful Homes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Josefin Sans', sans-serif; margin: 0; padding: 0; background: #83bcd6; }
+        header { background: #83bcd6; color: white; text-align: center; padding: 5px; }
+        header h1 { 
+            font-family: 'Gochi Hand', cursive; 
+            font-size: 80px; 
+            margin-top: 0; /* Revert margin-top to default */
+            position: static; /* Remove positioning for overlap */
+            z-index: auto; /* Reset z-index */
+        }
+        header h2 { font-family: 'Josefin Sans', cursive; font-size: 40px; margin-top: -40px; }
+        section {
+            padding: 0px;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            background-color: #00000010;
+        }
+        .gallery {
+            justify-items: center;
+            width: auto;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            max-width: 980px;
+        }
+        footer { background: #ffffff; color: 000000; text-align: center; padding: 1rem; margin-top: 20px; }
+        .logo { 
+            display: block; 
+            margin: 10px auto 5px; /* Revert to original margin */
+            max-width: 350px;
+            position: static; /* Remove positioning for overlap */
+            z-index: auto; /* Reset z-index */
+        }
+        .section-title {
+            display: flex;
+            align-items: center; /* Fix alignment */
+            justify-content: center;
+            background: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        .section-title img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px; /* Ensure consistent spacing */
+        }
+        #about-us p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2; /* Increase line spacing */
+            font-size: 25px; /* Match other sections */
+            font-weight: normal; /* Optional: Make the text normal weight */
+        }
+        #about-us ul {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.2; /* Increase line spacing */
+            font-size: 20px; /* Keep list font sizes consistent */   
+        }
+        #packages p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px;
+        }
+        #packages h3, #storage-solutions h3 {
+            font-size: 24px; /* Ensure consistency */
+            margin-top: 20px;
+            text-align: center;
+        }
+        #storage-solutions p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px; /* Ensure consistency */
+        }
+        #services p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 1.2;
+            font-size: 25px; /* Match other sections */
+        }
+        #services ul {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            line-height: 1.2;
+            font-size: 20px; /* Keep list font sizes consistent */
+        }
+        #services h3 {
+            font-size: 24px; /* Consistent with other h3 elements */
+            margin-top: 20px;
+            text-align: center;
+        }
+        #contact p {
+            font-size: 30px; /* Default font size for larger screens */
+            font-weight: bold; /* Optional: Make the text bold */
+            word-wrap: break-word; /* Ensure long text wraps properly */
+            text-align: center; /* Center-align the text */
+        }
+        @media (max-width: 768px) {
+            section {
+                padding: 10px; /* Add padding for better readability */
+            }
+            .section-title img {
+                width: 50px; /* Adjust icon size for smaller screens */
+            }
+            .gallery {
+                display: block;
+            }
+            .gallery img {
+                margin-bottom: 10px;
+                max-width: 100%; /* Ensure images scale to fit smaller screens */
+                height: auto;
+            }
+            header h1 {
+                font-size: 50px; /* Reduce header font size */
+            }
+            header h2 {
+                font-size: 24px; /* Adjust subheader font size */
+            }
+            .section-title h2 {
+                font-size: 20px; /* Adjust section title font size */
+            }
+            h3 {
+                font-size: 20px; /* Adjust h3 font size for smaller screens */
+            }
+            p, ul {
+                font-size: 18px; /* Adjust paragraph and list font size */
+            }
+            .contact-form input, .contact-form textarea, .contact-form button {
+                font-size: 16px; /* Adjust form input and button font size */
+            }
+            nav button {
+                font-size: 18px; /* Increase button font size for touch devices */
+                padding: 12px 20px; /* Add padding for better usability */
+            }
+            nav button + button {
+                margin-left: 10px; /* Add spacing between buttons */
+            }
+            #contact p {
+                font-size: 20px; /* Adjust font size for smaller screens */
+                max-width: 90%; /* Ensure the text doesn't overflow the container */
+                margin: 0 auto; /* Center the text block */
+            }
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav button {
+            background-color: #00000010;
+            color: white;
+            border: 1px solid white; /* Add 1px white border */
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        nav button:hover {
+            background-color: #83bcd6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Logo white trans.png" alt="Company Logo" class="logo">
+        <h1>Tidy Peaceful Homes</h1>
+        <h2> Professional Organizers</h2>
+        <nav>
+            <button onclick="document.getElementById('about-us').scrollIntoView({ behavior: 'smooth' });">About Us</button>
+            <button onclick="document.getElementById('services').scrollIntoView({ behavior: 'smooth' });">Services</button>
+            <button onclick="document.getElementById('packages').scrollIntoView({ behavior: 'smooth' });">Packages</button>
+            <button onclick="document.getElementById('gallery').scrollIntoView({ behavior: 'smooth' });">Gallery</button>
+            <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">Contact</button>
+        </nav>
+    </header>
+    
+    <section id="about-us">
+        <div class="section-title">
+            <img src="images/emb1 left.png" alt="Icon">
+            <h2>Let Us Organize Your Chaos Into Functionality</h2>
+            <img src="images/emb1 right.png" alt="Icon">
+        </div>
+        <p>
+            We specialize in transforming chaotic spaces into calm, functional, and beautifully 
+            organized environments so you can spend less time stressing and more time enjoying your home.
+            Whether it’s a packed pantry, an overflowing closet, or a cluttered bedroom, 
+            we’re here to bring order to your everyday life - always with compassion and zero judgement. We understand that life gets busy
+            and that every home has a story. That's why
+            we offer decluttering, space optimization, and personalized organization  tailored to fit your lifestyle 
+            and needs in a supportive, respectful way
+        </p>
+    </section>
+
+    <section id="services">
+        <div class="section-title">
+            <img src="images/emb2 left.png" alt="Icon">
+            <h2>Our Services</h2>
+            <img src="images/emb2 right.png" alt="Icon">
+        </div>
+        <h3>
+            Our professional home organization services include:</h3>
+        <ul style="list-style: none; padding: 0; text-align: left;">
+            <li>🍳 <strong>Pantry & Kitchen Organization</strong> – Streamline your food storage and make everything easily accessible</li>
+            <li>👗 <strong>Closet Makeovers</strong> – From seasonal wardrobes to everyday essentials, we’ll maximize space and style</li>
+            <li>🛏️ <strong>Bedroom & Living Space Refresh</strong> – Create serene, clutter-free zones that promote rest and relaxation</li>
+            <li>💻 <strong>Office & Workspace Organization</strong> – Create a productive environment with efficient systems for paperwork, supplies, and equipment</li>
+            <li>📦 <strong>Custom Storage Solutions & Space Planning</strong> – We help you make the most of every inch with tailored organization strategies</li>
+            <li>📉 <strong>Decluttering & Downsizing</strong> – We help you sort through your belongings, decide what to keep, and find new homes for the rest</li>  
+        </ul>
+        <p> 
+        </p>
+    </section>
+
+    <section id="packages">
+        <div class="section-title">
+            <img src="images/emb5 left.png" alt="Icon">
+            <h2>Packages</h2>
+            <img src="images/emb5 right.png" alt="Icon">
+        </div>
+        
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0px; padding: 20px;">
+            <div style="flex: 1; margin-left: 20px; text-align: left;">
+                <p>✨Quick Refresh, $180✨ Up to 3 hours of organizing; great for lightly cluttered areas, small home offices, small pantries, or 
+                    a section of a room such as a vanity or closet</p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; padding: 20px;">
+            <div style="flex: 1; margin-right: 20px; text-align: left;">
+                <p>✨Space Reset, $350✨ Up to 6 hours of organizing; perfect for bedrooms, walk-in closets, or small kitchens</p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0px; padding: 20px;">
+            <div style="flex: 1; margin-left: 20px; text-align: left;">
+                <p>✨Total Transformation, $650✨ Two sessions of up to 6 hours of organizing each or one session of up to 6 hours
+                    of organizing with 2 organizers; ideal
+                    for large areas, hobby rooms, large kitchens, or heavily cluttered spaces</p>
+                </p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-direction: row-reverse; padding: 20px;">
+            <div style="flex: 1; margin-right: 20px; text-align: left;">
+                <p>✨Custom Package✨ Don't see a package that fits your needs? Contact us and we will customize a package just for you</p>
+            </div>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; padding: 20px;">
+            <div style="flex: 1; margin-left: 20px; text-align: left;">
+                <p>✨Storage Solutions Add-On, Starting at $25✨ Need help sourcing storage items? If you don't already have your own, 
+                    we'll find the right solutions for your space such as baskets, bins, or shelves</p>
+            </div>
+        </div>
+        <h3> All packages include:</h3>
+        <p> Thoughtful organization of your space, personalized decluttering guidance, light cleaning (surface wiping and dusting; vacuuming
+            or sweeping of the area), plus removal of trash and donation drop-off
+        </p>
+    </section>
+    
+    <section id="gallery">
+        <div class="section-title">
+            <img src="images/emb4 left.png" alt="Icon">
+            <h2>Check Out Our Work</h2>
+            <img src="images/emb4 right.png" alt="Icon">
+        </div>
+        <div class="gallery">
+            <div>
+                <a href="images/Attic before and after oct 2022.jpg" target="_blank">
+                    <img src="images/Attic before and after oct 2022.jpg" alt="Attic Before and After - October 2022">
+                </a>
+               
+            </div>
+                        <div>
+                <a href="images/Shed before and after April 2025.jpg" target="_blank">
+                    <img src="images/Shed before and after April 2025.jpg" alt="Shed Before and After - April 2025">
+                </a>
+                
+            </div>
+                    </div>
+    </section>
+    
+    <section id="contact">
+        <div class="section-title">
+            <img src="images/emb3 left.png" alt="Icon">
+            <h2>Contact Us</h2>
+            <img src="images/emb3 right.png" alt="Icon">
+        </div>
+        <p>Email: tidypeacefulhomes@gmail.com</p>
+        <p>Phone: 757 392 7258</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Tidy Peaceful Homes</p>
+    </footer>
+</body>
+</html>
