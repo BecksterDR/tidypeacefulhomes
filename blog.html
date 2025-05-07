@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GE7RHR4YH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2GE7RHR4YH');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tidy Peaceful Homes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Tab image.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #83bcd6;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        header { 
+            background: #83bcd6; 
+            color: white; 
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center; 
+            padding: 5px; 
+            padding-top: 10px; }
+        header img {
+            max-width: 200px; /* Adjust the logo size for mobile */
+            height: auto; /* Maintain aspect ratio */
+        }    
+        header h1 { 
+            font-family: 'Gochi Hand', cursive; 
+            font-size: 80px; 
+            margin-top: 0; /* Revert margin-top to default */
+            position: static; /* Remove positioning for overlap */
+            z-index: auto; /* Reset z-index */
+        }
+        header h2 { 
+            font-family: 'Josefin Sans', cursive; 
+            font-size: 40px; 
+            margin-top: -40px; 
+        }
+        header h3 { 
+            font-family: 'Josefin Sans', cursive; 
+            font-size: 25px; 
+            margin-top: -20px; 
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+            font-size: 20px;
+        }
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            border: 0px solid #83bcd6;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            padding-bottom: 10px; /* Add space between sections */
+        }
+        section h2 {
+            line-height: 1.5;
+            padding: 20px;
+        }
+        .section-title {
+            display: flex;
+            color: #000000;
+            align-items: center; /* Fix alignment */
+            justify-content: center;
+            background: white;
+            border: 0px solid #83bcd6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        .section-title img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px; /* Ensure consistent spacing */
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 22px;
+            color: white;
+            background: #83bcd6; /* Change background color to match header */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .content a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .content a:hover {
+            color: #5c8597; /* Change to a different color on hover */
+        }
+        h3 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+            line-height: 1.2; /* Adjust line spacing for readability */
+        }
+        hr {
+            border: none; /* Remove the default border */
+            height: 2px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 10px auto; /* Add spacing above and below the line */
+            width: 100%; /* Set the width of the line */
+            border-radius: 0px; /* Optional: Add rounded edges */
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+        nav {
+            position: relative;
+            margin-top: 0px;
+        }
+        nav a {
+            display: inline-block;
+            background-color: #83bcd6;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: 1px solid white;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #83bcd6;
+        }
+        .menu-toggle {
+            display: none;
+            background-color: white;
+            color: #83bcd6;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 20px;
+            border-color: white;
+            border-width: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .menu-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .social-button {
+            border-radius: 50%; /* Optional: Make the icons circular */
+            border: none; /* Remove border */
+            padding-top: 20px; /* Adjust padding for better alignment */
+        }
+        .social-icon {
+            width: 37px; /* Make the icon fill the button */
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            border-radius: 50%; /* Optional: Make the icons circular */
+        }
+        .social-icon:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+        footer { 
+            background: white; 
+            color: 000000; 
+            text-align: center; 
+            padding: 1rem; 
+            margin-top: 20px; 
+        }
+        .blog-image {
+            width: 100%; /* Make the image responsive */
+            max-width: 400px; /* Limit the maximum width */
+            height: auto; /* Maintain aspect ratio */
+            margin: 20px auto; /* Add spacing above and below the image */
+            border-radius: 10px; /* Optional: Add rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow */
+            display: block; /* Ensure the image is a block element */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .image-row {
+            display: flex;
+            justify-content: center; /* Center the images horizontally */
+            gap: 20px; /* Add spacing between the images */
+        }
+        .blog-image:hover {
+            transform: scale(1.05); /* Slightly enlarge the image on hover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+        .content li {
+            margin: 5px 0;
+            color: white;
+        }
+        .content a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .content a:hover {
+            color: #5c8597; /* Change to a different color on hover */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+@media (max-width: 768px) {
+    header img {
+        max-width: 150px; /* Adjust the logo size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+    header h1 {
+        font-size: 40px; /* Reduce header font size */
+        padding-bottom: 10px; /* Add padding for spacing */
+    }
+    header h2 {
+        font-size: 24px; /* Adjust subheader font size */
+        padding-bottom: 10px; /* Add padding for spacing */
+    }
+    header h3 {
+        font-size: 20px;
+        max-width: 85%;  /* Adjust h3 font size for smaller screens */
+        margin: 0 auto; /* Center the text block */
+    }
+    .section-title h2 {
+        font-size: 24px; /* Adjust section title font size */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+    .menu-container {
+        display: flex; /* Align items horizontally */
+        align-items: center; /* Vertically center the items */
+        gap: 10px; /* Add spacing between the elements */
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 10px;
+    }
+    .menu-links.show {
+        display: flex;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+            <a href="https://www.facebook.com/tidypeacefulhomes" target="_blank" class="social-button">
+                <img src="images/Facebook logo.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com/tidypeacefulhomes/" target="_blank" class="social-button">
+                <img src="images/Instagram logo.png" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+        <div class="menu-links" id="navMenu">
+            <a href="index.html">Welcome</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="book_now.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <img src="images/Logo white trans.png" alt="Company Logo">
+        <h1>Tidy Peaceful Homes</h1>
+        <h2>Professional Organizers</h2>
+    </header>
+    <div class="section-title">
+        <img src="images/emb1 left.png" alt="Icon">
+        <h2>Blog</h2>
+        <img src="images/emb1 right.png" alt="Icon">
+    </div>
+    <section>
+        <h2>Hi there! I'm excited to share a little more about who I am and why I’m passionate about helping you create a peaceful, organized space</h2>
+
+        <div class="content">
+            <h3>Latest posts</h3>
+            <hr>
+            <ul>
+                <li><a href="#mom-motivation" style=" text-decoration: underline;">My Mom is an Inspiration</a></li>
+            </ul>
+        </div>
+
+        <h2>Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a>  find peace in your home</h2>
+
+            <div class="content" id="mom-motivation">
+                    <h3>My Mom is an Inspiration</h3>
+                    <hr>
+                    <p>May is full of birthdays in my family, including my mom’s. This past weekend, I had the chance to visit her and spend some time celebrating, 
+                        and I walked away with more than just cake and memories. I left feeling genuinely inspired by the transformation she’s made in her home. </p>
+                    <p>As I settled in and we were visiting together, I began to notice that things were different than they were a few months ago. Every room felt 
+                        calmer, more spacious, and more intentional. Closets were tidy with neatly organized and labeled containers. Bedrooms no longer had miscellaneous 
+                        items tucked into corners. It turns out, over the past few months my mom has been on a quiet mission: to organize her entire home, one space at a time.</p>
+                    <p>But this wasn’t just a spring-cleaning project; it’s part of something bigger.</p>
+                <div class="image-row">
+                    <a href="blog images/coat closet.jpg" target="_blank">
+                        <img src="blog images/coat closet.jpg" alt="coat closet" class="blog-image">
+                    </a>
+                    <a href="blog images/toy closet.jpg" target="_blank">
+                        <img src="blog images/toy closet.jpg" alt="toy closet" class="blog-image">
+                    </a>
+                </div>
+                    <p>A few years ago, my mom went through a major life shift that left her without the emotional foundation she had built her entire life on. 
+                        Since then, she’s been slowly finding herself again; learning what truly makes her feel happy, grounded, and at peace. This organizing 
+                        journey was one of the ways she started reclaiming her space and her sense of calm. It came from a place of self-discovery, not pressure.</p>
+                    <p>She excitedly gave me the tour, showing how she stores tool boxes and bead organizers full of meticulously sorted Legos under the beds. 
+                        In the guest closet, craft supplies are neatly stored in empty envelope boxes, labeled, and shelved. Scarves, hats, and gloves are now 
+                        stored in the coat closet, right where she grabs her coat, because, as she put it, “that just makes sense.” The closet in the room with 
+                         her grandchildren’s toys now has shelves filled with games, play-sets, and old Disney VHS tapes that are easy to see and access. The hand 
+                        tools are stored in a filing cabinet and old kitchen cupboards because that’s what she had on hand, and they fit in the space.</p>
+                    <a href="blog images/craft closet.jpg" target="_blank">
+                        <img src="blog images/craft closet.jpg" alt="craft closet" class="blog-image">
+                    </a>
+                    <p>She told me how much less stressful it is to have guests over now that everything has a designated place. In the past, she used to do what 
+                        so many of us do, the last-minute “hide and dash,” tucking clutter into the nearest drawer or cabinet just to make things look presentable. 
+                        But now, those moments of panic are gone. She knows where things go, and more importantly, she knows they <i>have</i> somewhere to go.</p>
+                    <p>What really moved me was how she talked about the process itself. It wasn’t just about cleaning or tidying, it was about creating a home that
+                         felt good to live in. She didn’t go out and buy tons of new bins or shelving units. She used what she already had, created smart zones for 
+                         different activities, and took her time labeling things so they’d be easy to maintain.</p>
+                <div class="image-row">
+                    <a href="blog images/utility closet.jpg" target="_blank">
+                        <img src="blog images/utility closet.jpg" alt="utility closet" class="blog-image">
+                    </a>
+                    <a href="blog images/hall closet.jpg" target="_blank">
+                        <img src="blog images/hall closet.jpg" alt="hall closet" class="blog-image">
+                    </a>
+                </div>
+                    <p>The project took her several months, and she said she actually enjoyed it; something I don’t think she expected at the beginning. And now, 
+                        she says she feels more peaceful at home. Less frantic, less pressured to live in any way other than the way that makes her happy.</p>
+                    <p>As someone who helps people organize their homes for a living, I am so inspired by my mom and her journey. Organizing isn’t about perfection.
+                         It’s about peace. It’s about making your space work for you, so you can stop feeling overwhelmed and start enjoying your life more fully.</p>
+                <div class="image-row">    
+                    <a href="blog images/lego bead case.jpg" target="_blank">
+                        <img src="blog images/lego bead case.jpg" alt="lego bead case" class="blog-image">
+                    </a>
+                    <a href="blog images/lego tool box.jpg" target="_blank">
+                        <img src="blog images/lego tool box.jpg" alt="lego tool box" class="blog-image">
+                    </a>
+                </div>
+                    <p>So here’s to my mom, for showing me that transformation is possible at any age, and that with a little time and care, we really can create 
+                        spaces that support and reflect who we are. 💛</p>
+                    <p>May 6, 2025</p>
+            </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2025 Tidy Peaceful Homes | 
+            <a href="terms_of_service.html">Terms of Service</a> | 
+            <a href="privacy_policy.html">Privacy Policy</a>
+        </p>
+        <button id="jumpToTop" onclick="scrollToTop()">⬆ Jump to Top</button>
+    </footer>
+            
+        <style>
+                #jumpToTop {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: white;
+                    color: #83bcd6;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                    display: none;
+                    z-index: 1000;
+                }
+            
+                #jumpToTop:hover {
+                    background-color: #5c8597;
+                }
+        </style>
+            
+    <script>
+        window.onscroll = function() {
+            const button = document.getElementById("jumpToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+            
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
