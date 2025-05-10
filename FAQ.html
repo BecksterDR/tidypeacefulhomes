@@ -8,7 +8,714 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  gtag('config', 'G-2GE7RHR4YH');<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2GE7RHR4YH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
   gtag('config', 'G-2GE7RHR4YH');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Tidy Peaceful Homes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/Tab image.png" type="image/png">
+    <style>
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #83bcd6;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        header { 
+            background: #83bcd6; 
+            color: white; 
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            text-align: center; 
+            padding: 5px; 
+            padding-top: 10px; }
+        header img {
+            max-width: 200px; /* Adjust the logo size for mobile */
+            height: auto; /* Maintain aspect ratio */
+        }
+        header h1 { 
+            font-family: 'Gochi Hand', cursive; 
+            font-size: 80px; 
+            margin-top: 0; /* Revert margin-top to default */
+            position: static; /* Remove positioning for overlap */
+            z-index: auto; /* Reset z-index */
+        }
+        header h2 { 
+            font-family: 'Josefin Sans', cursive; 
+            font-size: 40px; 
+            margin-top: -40px; 
+        }
+        header h3 { 
+            font-family: 'Josefin Sans', cursive; 
+            font-size: 25px; 
+            margin-top: -20px; 
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 1000px;
+            font-size: 20px;
+        }
+        section {
+            background-color: white;
+            padding: 10px;
+            margin: 20px auto;
+            text-align: center;
+            border: 0px solid #83bcd6;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            max-width: 1000px;
+            padding-bottom: 10px; /* Add space between sections */
+        }
+        section h2 {
+            line-height: 1.5;
+            padding: 20px;
+        }
+        .section-title {
+            display: flex;
+            color: #000000;
+            align-items: center; /* Fix alignment */
+            justify-content: center;
+            background: white;
+            border: 0px solid #83bcd6;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-bottom: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 20px;
+        }
+        .section-title img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px; /* Ensure consistent spacing */
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            text-align: center;
+            line-height: 1.5;
+            font-size: 22px;
+            color: white;
+            background: #83bcd6; /* Change background color to match header */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .answer {
+            max-height: 0; /* Initially hidden */
+            overflow: hidden; /* Hide content that overflows */
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth animation */
+            padding: 0; /* No padding when hidden */
+        }
+        .answer.show {
+            max-height: 1000px; /* Set a maximum height large enough for the content */
+            padding: 10px; /* Add padding when visible */
+        }
+        .question {
+            cursor: pointer; /* Indicate that the question is clickable */
+            font-weight: bold;
+            color: white;
+        }
+        .question:hover {
+            text-decoration: underline;
+        }
+        .arrow {
+            display: inline-block;
+            transition: transform 0.3s ease; /* Smooth rotation animation */
+            margin-right: 10px; /* Add spacing between the arrow and the text */
+        }
+        .arrow.rotate {
+            transform: rotate(90deg); /* Rotate the arrow 90 degrees */
+        }
+        h3 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
+            line-height: 1.2; /* Adjust line spacing for readability */
+        }
+        hr {
+            border: none; /* Remove the default border */
+            height: 2px; /* Set the thickness of the line */
+            background-color: white; /* Set the color of the line */
+            margin: 10px auto; /* Add spacing above and below the line */
+            width: 100%; /* Set the width of the line */
+            border-radius: 0px; /* Optional: Add rounded edges */
+        }
+        footer a {
+            color: black;
+            text-decoration: none;
+        }
+        nav {
+            position: relative;
+            margin-top: 0px;
+        }
+        nav a {
+            display: inline-block;
+            background-color: #83bcd6;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+            border: 1px solid white;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: white;
+            color: #83bcd6;
+        }
+        .menu-toggle {
+            display: none;
+            background-color: white;
+            color: #83bcd6;
+            font-size: 20px;
+            padding: 5px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 20px;
+            border-color: white;
+            border-width: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+        .menu-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .social-button {
+            border-radius: 50%; /* Optional: Make the icons circular */
+            border: none; /* Remove border */
+            padding-top: 20px; /* Adjust padding for better alignment */
+        }
+        .social-icon {
+            width: 37px; /* Make the icon fill the button */
+            height: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            border-radius: 50%; /* Optional: Make the icons circular */
+        }
+        .social-icon:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+        footer { 
+            background: white; 
+            color: 000000; 
+            text-align: center; 
+            padding: 1rem; 
+            margin-top: 20px; 
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+        .content li {
+            margin: 5px 0;
+            color: white;
+        }
+        .content a {
+            color: white;
+            text-decoration: underline;
+            transition: color 0.3s;
+        }
+        .content a:hover {
+            color: #5c8597; /* Change to a different color on hover */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+@media (max-width: 768px) {
+    header img {
+        max-width: 150px; /* Adjust the logo size for mobile */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: -30px;
+    }
+    header h1 {
+        font-size: 40px; /* Reduce header font size */
+        padding-bottom: 10px; /* Add padding for spacing */
+    }
+    header h2 {
+        font-size: 24px; /* Adjust subheader font size */
+        padding-bottom: 10px; /* Add padding for spacing */
+    }
+    header h3 {
+        font-size: 20px;
+        max-width: 85%;  /* Adjust h3 font size for smaller screens */
+        margin: 0 auto; /* Center the text block */
+    }
+    .section-title {
+        padding: 0px; /* Remove padding for mobile */
+    }
+    .section-title img {
+        width: 50px; /* Adjust icon size for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .section-title h2 {
+        font-size: 24px; /* Adjust section title font size */
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+    .menu-container {
+        display: flex; /* Align items horizontally */
+        align-items: center; /* Vertically center the items */
+        gap: 10px; /* Add spacing between the elements */
+    }
+    .menu-toggle {
+        display: block;
+        margin-bottom: -20px;
+    }
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 10px;
+    }
+    .menu-links.show {
+        display: flex;
+    }
+    nav a {
+        margin: 5px 0;
+    }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="menu-container">
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+        </div>
+        <div class="menu-links" id="navMenu">
+            <a href="index.html">Welcome</a>
+            <a href="services.html">Services</a>
+            <a href="packages.html">Packages</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="FAQ.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+            <a href="book_now.html">Book Now</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <img src="images/Logo white trans.png" alt="Company Logo">
+        <h1>Tidy Peaceful Homes</h1>
+        <h2>Professional Organizers</h2>
+    </header>
+    <div class="section-title">
+        <img src="images/emb5 left.png" alt="Icon">
+        <h2>FAQ</h2>
+        <img src="images/emb5 right.png" alt="Icon">
+    </div>
+    <section>
+        <h3><span style= "text-shadow: none;">Please <a href="contact.html" style="color: #83bcd6; text-decoration: underline;">reach out</a> 
+            if you don't see the answer to your question here!</span></h3>
+            <div class="content">
+                <h3>Table of Contents</h3>
+                <hr>
+                <ul>
+                    <li><a href="#trust-professionalism" style=" text-decoration: underline;">Trust & Professionalism</a></li>
+                    <li><a href="#cost-process" style=" text-decoration: underline;">Cost & Process</a></li>
+                    <li><a href="#session-logistics" style=" text-decoration: underline;">Session Logistics</a></li>
+                    <li><a href="#special-circumstances" style=" text-decoration: underline;">Special Circumstances</a></li>
+                    <li><a href="#support-accessibility" style=" text-decoration: underline;">Support & Accessibility</a></li>
+                    <li><a href="#policies" style=" text-decoration: underline;">Policies</a></li>
+                </ul>
+            </div>
+
+            <h2>Ready for a <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">session?</a></h2>
+
+            <div class="content" id="trust-professionalism">
+                <h3>Trust & Professionalism</h3>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> How are you different from other oganizing services?
+                    </p>
+                    <p class="answer"> My goal isn’t just to tidy your space, it’s to help you feel at peace in your home again. I’m not here to sell you containers or 
+                        just put things in pretty bins. I focus on the connection between your mental health and your physical space, because they’re deeply linked.
+                        I’ve spent years studying mental wellness, reading books, and applying those principles in my own home. What I offer isn’t just organization, it’s 
+                        transformation that’s sustainable, personal, and rooted in compassion. I know this works, because I live it too
+                        </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Why should I trust you in my home?
+                    </p>
+                    <p class="answer">I understand how vulnerable this process can be, and I take that trust very seriously. 
+                        Your space and your story are always treated with respect and confidentiality</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Will you judge me because of my clutter?
+                    </p>
+                    <p class="answer">Not at all! Everyone’s life gets busy. You reached out for support, and that takes strength, not shame</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span>Is my home too messy for you to work with?
+                    </p>
+                    <p class="answer">Very unlikely! No matter how overwhelmed things may feel, you are not too far gone. I’m here to help, not judge. 
+                        However, I’m not trained to work in cases of severe hoarding, so if that’s the situation, I’d recommend connecting with a specialist 
+                        who can better support your needs</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Is everything we do confidential?
+                    </p>
+                    <p class="answer">Yes. Your privacy is deeply respected, and I never share client details or stories without permission</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What if I have personal or sensitive items?
+                    </p>
+                    <p class="answer">That’s totally okay. I’ll approach everything with care and respect. 
+                        You’re always welcome to move or withhold anything you’re not ready to share</p>
+                </div>
+                <hr>                
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Will you post pictures of my space online?
+                    </p>
+                    <p class="answer">Only with your clear permission. If you’re open to it, before-and-after photos are helpful but they’re never required</p>
+                </div>
+                <hr>
+            </div>
+            
+            <h2>Check out my <a href="gallery.html" style="color: #83bcd6; text-decoration: underline;">my work!</a></h2>
+
+            <div class="content" id="cost-process">
+                <h3>Cost & Process</h3> 
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What does the process look like from start to finish?
+                    </p>
+                    <p class="answer">            
+                        After an intial consultation to determine how to best use our time together, I travel to your home to work with you in your space.
+                        I begin by sorting your belongings into simple, easy-to-understand categories so you can clearly see what you have.
+                        Then I guide you through deciding what to keep, toss, or donate, always respecting your pace and your choices. 
+                        Finally, I organize your space using what you already have and, if necessary, help you bring in new solutions that fit your style, needs, and budget
+                    </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Do you have a minimum number of hours for a session?
+                    </p>
+                    <p class="answer">Yes, my minimum session requirement is 3 hours. Please contact me if you have a special request and I may be willing to make an exception</p>
+                </div>
+                <hr>               
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What's included in the cost?
+                    </p>
+                    <p class="answer">Personalized decluttering guidance, a starter kit of up to 5 small baskets or bins to help kickstart 
+                        your organizing, light cleaning (surface wiping and dusting; vacuuming or sweeping of the area), thoughtful organization of your space,
+                         plus removal of up to 5 bags of trash and donations</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> How far do you travel?
+                    </p>
+                    <p class="answer">I service a 20 mile radius centered at the intersection of Townpoint Road and College Drive in Suffolk. 
+                        <br>Areas include Windsor, Smithfield, Suffolk, 
+                        Portsmouth, Norfolk, Chesapeake, Virginia Beach, Newport News, Hampton, and Poquoson</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Do you do apartments, or even just a room?
+                    </p>
+                    <p class="answer">Yes! Whether it's one closet or your whole house, every space matters. Even small changes can make a big impact! </p>
+                </div>
+                <hr>
+            </div>
+            
+            <h2>Ready to <a href="book_now.html" style="color: #83bcd6; text-decoration: underline;">book?</a></h2>
+
+            <div class="content" id="session-logistics">
+                <h3>Session Logistics</h3> 
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> How long will it take?
+                    </p>
+                    <p class="answer">It depends on your space, your goals, and how involved you want to be. I’ll give you an honest estimate during our consultation 
+                        and work efficiently every step of the way. I recommend starting with a 3-hour session so we can get to know each other, make real progress, 
+                        and better understand what your space needs moving forward</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Do I need to clean before you come over?
+                    </p>
+                    <p class="answer">If you need help with things like clothes, dishes, or bed linens, those should be clean before I arrive; I'm here to organize, 
+                        not sanitize. Other than that, no need to tidy up! As long as the space is sanitary and safe to walk through, please don’t worry about cleaning for me. 
+                        I need to see things as they really are so I can help in the most practical way</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Will you throw away my stuff without asking?
+                    </p>
+                    <p class="answer">Never. Every decision is yours to make. I guide and support, you stay in control</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Do I have to be there the whole time? How involved do I need to be?
+                    </p>
+                    <p class="answer">Yes, you’ll need to be on the property while I’m working, but how involved you are is totally up to you. As long as we set clear 
+                        expectations ahead of time, you can be as hands-on or hands-off as you’d like. Your input is valuable, especially for decision-making, and being 
+                        more involved often leads to faster progress and more personalized results.
+                        Hands-on might mean working alongside me the whole session, while hands-off could be checking in occasionally while I sort or set up systems. 
+                        Either way, we’ll tailor it to fit your comfort and schedule
+                        </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> How much will you talk during a session?
+                    </p>
+                    <p class="answer">That’s up to you! Some people like to chat, others prefer quiet focus. I’ll match your energy and comfort level</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Am I expected to buy fancy storage bins or products?
+                    </p>
+                    <p class="answer">Absolutely not! I'll work with what you already have or suggest simple, budget-frieldy solutions
+                        if you want them
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+            <h2>Check out my <a href="blog.html" style="color: #83bcd6; text-decoration: underline;">blog!</a></h2>
+
+            <div class="content" id="special-circumstances">
+                <h3>Special Circumstances</h3> 
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> My parents recently passed away and I have inherited a lot of clutter. Can you help me?
+                    </p>
+                    <p class="answer">I am so sorry for you loss. I know this is an exceptionally difficult time for you and I would be
+                        honored to help you confront the pain of going through a loved ones belongings
+                    </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> Can you help me before/after a move?
+                    </p>
+                    <p class="answer">Absolutely! Moving is a common time for people to realize their belongings no longer work in their space. I can help you declutter before you move, 
+                        or unpack and organize your new space after you move.
+                        However, I do not offer packing services at this time</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> I have a loved one who would really benefit from your services, but they won't accept help. Can I hire you on their behalf?
+                    </p>
+                    <p class="answer">No. Trust is a crucial part of my process and I would never be in someone else's space without their say so.
+                        I do not perform my services for anyone who does not explicitly ask for them. 
+                        <br>If you have a loved one with special needs who cannot
+                        explicitly request my services, please contact me so we can discuss the situation and I may make an exception
+                    </p>
+                </div>
+                <hr>    
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span>Can you help in cases of extreme hoarding?
+                    </p>
+                    <p class="answer">No, I am not trained to work in cases of severe hoarding. If that’s your situation, I’d recommend connecting with a specialist who can better 
+                        support your needs</p>
+                </div>
+                <hr> 
+            </div>
+
+            <h2>Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a>  find peace in your home</h2>
+
+            <div class="content" id="support-accessibility">
+                <h3>Support & Accessibility</h3>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> I am not mobile or able to move things very well. Can you still help me?
+                    </p>
+                    <p class="answer">Most definitely! My service is all inclusive, I will do all the decluttering and organization under the 
+                        guidelines that you and I set together; you won't need to lift a finger!</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What if I can't afford ongoing help?
+                    </p>
+                    <p class="answer">We can start with a single session and go from there. I offer small packages and flexible options to meet different
+                        needs. Don't hesitate to reach out so we can discuss your needs, I may be willing to make a special exception
+                    </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What happens if I fall back into clutter? Do you offer follow-up services?
+                    </p>
+                    <p class="answer">It's totally normal for life to take hold again and clutter to creep back in! I can come back any time to 
+                        help you stay on track and feel supported as your needs evolve</p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What if I have ADHD and stuggle to focus?
+                    </p>
+                    <p class="answer">You're in the right place! I create supportive, non-judgemental ADHD decluttering and organizing sessions tailored to your pace and needs.
+                        We'll work <i>with</i> how your brain works, not against it
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+            <h2>Check out your <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">package</a> options</h2>
+
+            <div class="content" id="policies">
+                <h3>Policies</h3> 
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What is your payment policy?
+                    </p>
+                    <p class="answer">I accept cash, cards, and Venmo. Payment in full is due after the session is complete and before I leave the property. Please see
+                        <a href="terms_of_service.html">Terms of Service</a> for full details
+                    </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What is your refund policy?
+                    </p>
+                    <p class="answer">Because I am not selling a product but instead offer time providing a personalized service in your home, I do not offer refunds. 
+                        If you were unhappy with the service you received, please contact me to let me know how it could have been better for you.
+                         I am always open to feedback and want to offer the best service possible
+                    </p>
+                </div>
+                <hr>
+                <div class="faq-item">
+                    <p class="question">
+                        <span class="arrow">></span> What is your rescheduling/cancellation policy?
+                    </p>
+                    <p class="answer">Cancellations and rescheduling must be made at least 24 hours in advance to avoid a cancellation fee.
+                        No-shows or cancellations within 24 hours will be charged $30.
+                        One reschedule is allowed per appointment without penalty, as long as it is made more than 24 hours in advance.
+                        <br>I know life has unpredicatable turns, so please contact me to let me know what's going on and I may waive the cancellation fee</p>
+                </div>
+                <hr>
+            </div>
+
+            <h2>Still have <a href="contact.html" style="color: #83bcd6; text-decoration: underline;">questions?</a></h2>
+    </section>
+    
+    <a href="https://www.facebook.com/tidypeacefulhomes" target="_blank" class="social-button">
+        <img src="images/Facebook logo.png" alt="Facebook" class="social-icon">
+    </a>
+    <a href="https://www.instagram.com/tidypeacefulhomes/" target="_blank" class="social-button">
+        <img src="images/Instagram logo.png" alt="Instagram" class="social-icon">
+    </a>
+
+    <footer>
+        <p>&copy; 2025 Tidy Peaceful Homes | 
+            <a href="terms_of_service.html">Terms of Service</a> | 
+            <a href="privacy_policy.html">Privacy Policy</a>
+        </p>
+        <button id="jumpToTop" onclick="scrollToTop()">⬆ Jump to Top</button>
+    </footer>
+            
+        <style>
+                #jumpToTop {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    background-color: white;
+                    color: #83bcd6;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                    display: none;
+                    z-index: 1000;
+                }
+            
+                #jumpToTop:hover {
+                    background-color: #5c8597;
+                }
+        </style>
+            
+    <script>
+        window.onscroll = function() {
+            const button = document.getElementById("jumpToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+            
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("show");
+        }
+    </script>
+<script>
+    document.querySelectorAll('.question').forEach(question => {
+        question.addEventListener('click', () => {
+            // Hide all other answers and reset arrows
+            document.querySelectorAll('.answer').forEach(answer => {
+                if (answer !== question.nextElementSibling) {
+                    answer.classList.remove('show');
+                }
+            });
+            document.querySelectorAll('.arrow').forEach(arrow => {
+                if (arrow !== question.querySelector('.arrow')) {
+                    arrow.classList.remove('rotate');
+                }
+            });
+
+            // Toggle the clicked answer and arrow
+            const answer = question.nextElementSibling;
+            const arrow = question.querySelector('.arrow');
+            answer.classList.toggle('show');
+            arrow.classList.toggle('rotate');
+        });
+    });
+</script>
+</body>
+</html>
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
