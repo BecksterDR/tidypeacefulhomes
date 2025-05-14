@@ -120,6 +120,20 @@
             background: #83bcd6; /* Change background color to match header */
             padding: 20px;
             border-radius: 10px;
+            height: 400px; /* Set a fixed height for the content */
+            overflow-y: auto; /* Enable vertical scrolling */
+            scrollbar-width: thin; /* For modern browsers: makes the scrollbar thinner */
+            scrollbar-color: #5c8597 white; /* Custom scrollbar colors */
+
+        }
+        .content ul {
+            list-style-type: none;
+            padding: 0;
+            color: white;
+        }
+        .content li {
+            margin: 5px 0;
+            color: white;
         }
         .content a {
             color: white;
@@ -223,23 +237,6 @@
             transform: scale(1.05); /* Slightly enlarge the image on hover */
             box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a deeper shadow on hover */
         }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-            color: white;
-        }
-        .content li {
-            margin: 5px 0;
-            color: white;
-        }
-        .content a {
-            color: white;
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-        .content a:hover {
-            color: #5c8597; /* Change to a different color on hover */
-        }
         html {
             scroll-behavior: smooth;
         }
@@ -326,19 +323,19 @@
     <section>
         <h3><span style= "text-shadow: none;">Hi there! I'm excited to share a little more about who I am and why I’m passionate about helping you create a peaceful, organized space</span></h3>
 
-        <div class="content">
+        <div class="content" style="height: auto;">
             <h3>Latest posts</h3>
             <hr>
             <ul>
-                <li><a href="#mess-feeds-stress" style=" text-decoration: underline;">When Mess Feeds Stress: Breaking the Clutter-Mental Health Loop</a></li>
-                <li><a href="#meet-organizer" style=" text-decoration: underline;">Meet Your Organizer!</a></li>
-                <li><a href="#mom-motivation" style=" text-decoration: underline;">My Mom is an Inspiration</a></li>
+                <li><a href="#mess-feeds-stress" style=" text-decoration: underline;">"When Mess Feeds Stress: Breaking the Clutter-Mental Health Loop"</a></li>
+                <li><a href="#meet-organizer" style=" text-decoration: underline;">"Meet Your Organizer!"</a></li>
+                <li><a href="#mom-motivation" style=" text-decoration: underline;">"My Mom is an Inspiration"</a></li>
             </ul>
         </div>
 
-        <h3><span style= "text-shadow: none;">Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a>  find peace in your home</span></h3>
+        <h3  id="mess-feeds-stress">When Mess Feeds Stress: Breaking the Clutter-Mental Health Loop</h3>
 
-            <div class="content" id="mess-feeds-stress">
+            <div class="content">
                 <h3>When Mess Feeds Stress: Breaking the Clutter-Mental Health Loop</h3>
                 <hr>   
                 <p>You open a cupboard and are hit with a wave of overwhelm. You walk into a room and instantly feel deflated and useless. You may even have a history of being 
@@ -431,7 +428,9 @@
 
             </div>
         
-            <div class="content" id="meet-organizer">
+            <h3 id="meet-organizer">Meet Your Organizer!</h3>
+
+            <div class="content">
                 <h3>Meet Your Organizer!</h3>
                 <hr>
                 <p>Hi, I’m Becca! I moved to the 757 with my boyfriend and our dog, Beaver, in 2022. It’s very different from the small town where I grew up, 
@@ -475,7 +474,9 @@
                 <p> May 11, 2025</p>
             </div>
 
-            <div class="content" id="mom-motivation">
+            <h3 id="mom-motivation">My Mom is an Inspiration</h3>
+
+            <div class="content">
                     <h3>My Mom is an Inspiration</h3>
                     <hr>
                     <p>May is full of birthdays in my family, including my mom’s. This past weekend, I had the chance to visit her and spend some time celebrating, 
