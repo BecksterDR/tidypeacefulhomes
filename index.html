@@ -216,6 +216,9 @@
             padding: 1rem; 
             margin-top: 20px; 
         }
+        html {
+            scroll-behavior: smooth;
+        }
 @media (max-width: 768px) {
     header img {
         max-width: 150px; /* Adjust the logo size for mobile */
@@ -323,9 +326,10 @@
             </div>
         </div>
         
-        <h3><span style="text-shadow: none;">Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a> find peace in your home</span> </h2>
-        <h3><span style="text-shadow: none;">Check out <a href="gallery.html" style="color: #83bcd6; text-decoration: underline;">my work</a> or continue reading below</span> </h2>
-        
+        <h3><span style="text-shadow: none;">Read <a href="#reviews" style="color: #83bcd6; text-decoration: underline;">reviews</a> from real customers!</span> </h3>
+        <h3><span style="text-shadow: none;">Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a> find peace in your home</span> </h3>
+        <h3><span style="text-shadow: none;">Check out <a href="gallery.html" style="color: #83bcd6; text-decoration: underline;">my work</a></span> </h3>
+
         <div class="content">
             <h3>Why Tidy Peaceful Homes?</h3>
             <hr>
@@ -347,6 +351,11 @@
             <h2>Learn more <a href="blog.html" style="color: #83bcd6; text-decoration: underline;">about me</a></h2>
 
         </section>
+
+<div id="reviews">
+    <script id="reviews" src="https://widget.trustmary.com/0bf51XHkJ"></script>
+</div>
+
         <a href="https://www.facebook.com/tidypeacefulhomes" target="_blank" class="social-button">
             <img src="images/Facebook logo.png" alt="Facebook" class="social-icon">
         </a>
@@ -396,11 +405,10 @@
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    </script>
-    <script>
         function toggleMenu() {
             document.getElementById("navMenu").classList.toggle("show");
         }
     </script>
+    
 </body>
 </html>
