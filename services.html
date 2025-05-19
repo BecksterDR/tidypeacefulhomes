@@ -36,6 +36,9 @@
             text-align: center;
             padding-bottom: 50px;
         }
+        html {
+            scroll-behavior: smooth;
+        }
         header { 
             background: #83bcd6; 
             color: white; 
@@ -285,56 +288,42 @@
     </div>
     <section>
         <h3><span style="text-shadow: none;">Serving Virginia Beach, Smithfield, Suffolk, Newport News, Chesapeake, and all the surrounding areas of the 757</span></h3> 
-        <h3><span style="text-shadow: none;">Looking for <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">pricing?</a></span> </h2>
-    
-        <div class="content">      
+        <h3><span style="text-shadow: none;">Looking for <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">pricing?</a></span> </h3>
+
+        <div class="content" id="free-cons">      
             <h3>💖FREE <a href="book_now.html">Consultations</a></h3>
             <hr>
                 <p>Before you book a session, we'll chat about your space, your needs, and your goals to determine the best plan of action for our time together</p>
         </div>   
     
-        <div class="content">
-            <h3>🧹In-Person Decluttering Coaching</h3>
+        <div class="content" id="in-person">
+            <h3>🧹In-Person Decluttering Coaching & Organization</h3>
             <hr>
-                <p>I'll travel to your home and be right there with you to help you sort it all out and decide what to toss or donate before the space is organized</p>
-        </div>
-
-        <div class="content">
-            <h3>📦Custom Storage Solutions</h3>
-            <hr>
-            <p>I'll design personalized storage systems that make the most of what you already have, tailored to your space and style. If necessary, we'll decide together on 
+            <p>I'll travel to your home and work alongside you to declutter and organize your space. Together, we'll sort items, decide what to keep, toss, or donate</p>
+            <p>We'll design personalized storage systems that make the most of what you already have, tailored to your space and style. If necessary, we'll decide together on 
                 what new items to purchase that fit your needs and budget</p>
-            </p>
+            <p>We'll organize your items in a way that works for your daily life, making your space feel calm, functional, 
+                and truly yours</p>
         </div>
 
-        <div class="content">
-            <h3>🧘Mindful Organization</h3>
+        <h3><span style="text-shadow: none;">How <a href="FAQ.html#involved" style="color: #83bcd6; text-decoration: underline;">involved</a> do I need to be?</span> </h3>
+
+        <div class="content" id="virtual">
+            <h3>💻Virtual Decluttering Coaching*</h3>
             <hr>
-            <p>I'll organize your items in a way that works for your daily life, making your space feel calm, functional, and truly yours</p>
+                <p>A 1-3 hour session were we can meet virtually to declutter and organize your space together. I'll guide you through the process, providing tips and support 
+                    along the way</p>
+                <p><span style="font-size:15px;">*This service is not therapy, counseling, or a substitute for mental health treatment. I do not diagnose or treat mental 
+                    health conditions, and I encourage clients to seek support from a licensed professional for those needs.</span></p>
         </div>
 
-        <div class="content">
+        <div class="content" id="follow-up">
             <h3>🔄Follow-Up Services</h3>
             <hr>
                 <p>After our initial session, I can help you maintain your space with follow-up sessions. We can also schedule regular check-ins to keep your home organized and peaceful</p>
         </div>
 
-        <div class="content">
-            <h3>🤝Types of Help Offered</h3>
-            <hr>
-            <ul>
-                <li><strong>Hands On:</strong> We go through each item together to decide if it’s a toss, keep, or donate, and then find a home for it. You decide the 
-                    pace, how many decluttering and organizing tips you want during the session, and how much you want me to gently push you to declutter</li>
-                    <br>
-                <li><strong>Less Hands On:</strong> I’ll sort items into categories before we declutter so decision-making feels less overwhelming and more bite-sized. 
-                    We can then organize together or you can give me guidelines to follow</li>
-                    <br>
-                <li><strong>Hands Off <span style="font-weight:normal;">(not recommended, less effective for long-term results)</span>:</strong> You set the vision for 
-                    the space, tossing and decluttering limits, and a general idea of where you want item types to live and I take care of the rest</li>
-            </ul>
-        </div>
-
-        <div class="content">
+        <div class="content" id="spaces">
             <h3>✨Spaces Serviced</h3>
             <hr>
                 <ul>
@@ -407,6 +396,7 @@
             function scrollToTop() {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             }
+            
         </script>
         <script>
             function toggleMenu() {
