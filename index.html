@@ -27,259 +27,7 @@
     <title>Welcome - Tidy Peaceful Homes</title>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Tab image.png" type="image/png">
-    <style>
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #83bcd6;
-            text-align: center;
-            padding-bottom: 50px;
-        }
-        header { 
-            background: #83bcd6; 
-            color: white; 
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center; 
-            padding: 5px; 
-            padding-top: 10px; }
-        header img {
-            max-width: 200px; /* Adjust the logo size for mobile */
-            height: auto; /* Maintain aspect ratio */
-        }
-        header h1 { 
-            font-family: 'Gochi Hand', cursive; 
-            font-size: 80px; 
-            margin-top: 0; /* Revert margin-top to default */
-            position: static; /* Remove positioning for overlap */
-            z-index: auto; /* Reset z-index */
-        }
-        header h2 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 40px; 
-            margin-top: -40px; 
-        }
-        header h3 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 25px; 
-            margin-top: -20px; 
-        }
-        section {
-            background-color: white;
-            padding: 10px;
-            margin: 20px auto;
-            text-align: center;
-            border: 0px solid #83bcd6;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            max-width: 1000px;
-            padding-bottom: 10px; /* Add space between sections */
-        }
-        section h2 {
-            line-height: 1.5;
-            padding: 20px;
-        }
-        .section-title {
-            display: flex;
-            color: #000000;
-            align-items: center; /* Fix alignment */
-            justify-content: center;
-            background: white;
-            border: 0px solid #83bcd6;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin-bottom: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            font-size: 20px;
-        }
-        .section-title img {
-            width: 100px;
-            height: auto;
-            margin: 0 10px; /* Ensure consistent spacing */
-        }
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            text-align: center;
-            line-height: 1.5;
-            font-size: 22px;
-            color: white;
-            background: #83bcd6; /* Change background color to match header */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .content a {
-            color: white;
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-        .content a:hover {
-            color: #5c8597; /* Change to a different color on hover */
-        }
-        h3 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
-            line-height: 1.2; /* Adjust line spacing for readability */
-        }
-        hr {
-            border: none; /* Remove the default border */
-            height: 2px; /* Set the thickness of the line */
-            background-color: white; /* Set the color of the line */
-            margin: 10px auto; /* Add spacing above and below the line */
-            width: 100%; /* Set the width of the line */
-            border-radius: 0px; /* Optional: Add rounded edges */
-        }
-        .becca-container {
-            display: flex;
-            align-items: center; /* Vertically align the image and text */
-            justify-content: center; /* Center the content horizontally */
-            gap: 20px; /* Add space between the image and the text */
-            max-width: 900px; /* Limit the width of the container */
-            margin: 20px auto; /* Center the container on the page */
-        }
-        .becca-photo {
-            width: 250px;
-            height: auto;
-            border-radius: 50%; /* Make the image circular */
-            flex-shrink: 0; /* Prevent the image from shrinking */
-        }
-        .becca-info {
-            border: 2px solid #83bcd6; /* Add a border */
-            padding: 20px; /* Add padding inside the border */
-            border-radius: 10px; /* Add rounded corners */
-            background-color: #83bcd6; /* Add a background color */
-            text-align: left; /* Align text to the left */
-            color: white;
-        }
-        footer a {
-            color: black;
-            text-decoration: none;
-        }
-        nav {
-            position: relative;
-            margin-top: 0px;
-        }
-        nav a {
-            display: inline-block;
-            background-color: #83bcd6;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            border: 1px solid white;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: white;
-            color: #83bcd6;
-        }
-        .menu-toggle {
-            display: none;
-            background-color: white;
-            color: #83bcd6;
-            font-size: 20px;
-            padding: 5px 10px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin: 20px;
-            border-color: white;
-            border-width: 0px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .menu-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .social-button {
-            border-radius: 50%; /* Optional: Make the icons circular */
-            border: none; /* Remove border */
-            padding-top: 20px; /* Adjust padding for better alignment */
-        }
-        .social-icon {
-            width: 37px; /* Make the icon fill the button */
-            height: auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            border-radius: 50%; /* Optional: Make the icons circular */
-        }
-        .social-icon:hover {
-            transform: scale(1.1); /* Slightly enlarge on hover */
-        }
-        footer { 
-            background: white; 
-            color: 000000; 
-            text-align: center; 
-            padding: 1rem; 
-            margin-top: 20px; 
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-@media (max-width: 768px) {
-    header img {
-        max-width: 150px; /* Adjust the logo size for mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: -30px;
-    }
-    header h1 {
-        font-size: 40px; /* Reduce header font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h2 {
-        font-size: 24px; /* Adjust subheader font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h3 {
-        font-size: 20px;
-        max-width: 85%;  /* Adjust h3 font size for smaller screens */
-        margin: 0 auto; /* Center the text block */
-    }
-    .section-title {
-        padding: 0px; /* Remove padding for mobile */
-    }
-    .section-title img {
-        width: 50px; /* Adjust icon size for mobile */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .section-title h2 {
-        font-size: 24px; /* Adjust section title font size */
-        white-space: nowrap; /* Prevent text wrapping */
-    }
-    .menu-container {
-        display: flex; /* Align items horizontally */
-        align-items: center; /* Vertically center the items */
-        gap: 10px; /* Add spacing between the elements */
-    }
-    .menu-toggle {
-        display: block;
-        margin-bottom: -20px;
-    }
-    .menu-links {
-        display: none;
-        flex-direction: column;
-        align-items: left;
-        margin-top: 10px;
-    }
-    .menu-links.show {
-        display: flex;
-    }
-    nav a {
-        margin: 5px 0;
-    }
-    .becca-container {
-        flex-direction: column; /* Stack the image and text vertically */
-        align-items: center; /* Center-align the content */
-    }
-    .becca-photo {
-        margin-bottom: -70px; /* Add spacing below the image */
-        z-index: 10; /* Bring the image to the front */
-    }
-}
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
@@ -288,13 +36,12 @@
         </div>
         <div class="menu-links" id="navMenu">
             <a href="index.html">Welcome</a>
-            <a href="services.html">Services</a>
-            <a href="packages.html">Packages</a>
+            <a href="services.html">In-Home</a>
+            <a href="virtual.html">Virtual 1:1</a>
             <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="FAQ.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-            <a href="book_now.html">Book Now</a>
-            <a href="contact.html">Contact</a>
         </div>
     </nav>
     <header>
@@ -307,54 +54,57 @@
         <h2>Welcome</h2>
         <img src="images/emb1 right.png" alt="Icon">
     </div>
+    
+
+    <section>
+        <p><a href="#in-home" style="color:black;">In-Home Services</a> | <a href="#virtual" style="color:black;">Virtual 1:1</a> | <a href="#know" style="color:black;">Get To Know Me</a></p>
+    </section>
+
     <section>
         <div>
-            <h2 style="text-shadow: 4px 4px 4px #83bcd6;">Is clutter making you miserable in your own home?</h2>
-            <h2 style="text-shadow: 4px 4px 4px #83bcd6;">Are you feeling stuck, ashamed, or overwhelmed?</h2>
-            <h2 style="text-shadow: 4px 4px 4px #83bcd6;">You're <i>not</i> alone, and I'm here to help you reclaim your space!</h2>
-        </div>
-        <div class="becca-container">
-            <img src="images/Becca pink bg.jpg" alt="Becca's Photo" class="becca-photo">
-            <div class="content">
-                <h3>Hi, I’m Becca!</h3>
-                <hr>
-                <p>I started Tidy Peaceful Homes because I believe that your space should be your sanctuary; a space that brings you peace, not stress</p>
-                <hr>
-                <p>With a passion for mental health and a love for creating calm, clutter-free environments, I see organizing not just as a task, but as a rewarding challenge</p>
-                <hr>
-                <p>Helping you reclaim your tidy, peaceful home would truly bring me joy!</p>
-            </div>
+            <h2 style="text-shadow: 4px 4px 4px #83bcd6;">Gentle, judgement-free decluttering coaching and professional organizing services for people who want to 
+                make a lasting change in their home</h2>
         </div>
         
-        <h3><span style="text-shadow: none;">Read <a href="#reviews" style="color: #83bcd6; text-decoration: underline;">reviews</a> from real customers!</span> </h3>
-        <h3><span style="text-shadow: none;">Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a> find peace in your home</span> </h3>
-        <h3><span style="text-shadow: none;">Check out <a href="gallery.html" style="color: #83bcd6; text-decoration: underline;">my work</a></span> </h3>
-
-        <div class="content">
-            <h3>Why Tidy Peaceful Homes?</h3>
-            <hr>
-            <p><i><strong>I understand</strong></i> that every home has a story and that life gets busy, especially if you're 
-                juggling things like ADHD, a hectic schedule, or family demands. That’s why my approach to decluttering, 
-                space optimization, and home organization is tailored to your unique lifestyle</p>
+        <div class="flex-image-container" id="in-home">
+            <img src="images/a neatly organized kitchen with a coffee maker, a toaster oven, and a microwave on the counters but we can see the whole kitchen.jpg" alt="Example" class="flex-image">
+            <div class="flex-info">
+                <h3>In-Home Services</h3>
+                <p style="margin-top:-20px; font-size:15px;">Serving Hampton Roads</p>
                 <hr>
-            <p><i><strong>I offer</strong></i> personalized, one-on-one support to help you take back control, always with compassion and zero judgment. 
-                My goal is to create practical systems that actually work for your real life; simple to maintain and 
-                designed to bring peace to your everyday routines</p>
-                <hr>
-
-            <p><i><strong>I love</strong></i> transforming chaotic, cluttered spaces into calm, functional, and 
-                beautifully organized environments so you can spend less time stressing and more time enjoying your home</p>
-                <hr>
-            <P><i><strong>I hope</strong></i> you'll let me help you create a home that feels peaceful, functional, and truly yours. I can't wait to meet you!</P>
+                   <p>Ready to feel at peace in your home? I’ll work side-by-side with you to sort, simplify, and organize your space in a way that fits your life. With gentle 
+                    coaching, personalized solutions, and flexible packages, we’ll create calm, clutter-free rooms using what you already have or add a few new touches that 
+                    match your style and budget. Let’s make your home a haven again</p>
+                   <p><a href="services.html" style="color:white;">Learn More</a></p>
+            </div>
         </div>
-            
-            <h2>Learn more <a href="blog.html" style="color: #83bcd6; text-decoration: underline;">about me</a></h2>
 
-        </section>
+        <div class="flex-image-container reverse" id="virtual">
+            <img src="images/virtual.png" alt="Example" class="flex-image">
+            <div class="flex-info">
+                <h3>Virtual 1:1</h3>
+                <p style="margin-top:-20px; font-size:15px;">1 Hour Video Chat</p>
+            <hr>
+                <p>Need guidance but prefer to tackle things on your own? In a one-on-one video session, I’ll walk through your space with you, answer your questions, 
+                    and offer practical, personalized tips to get you moving. You’ll learn smart strategies to clear the clutter and keep it that way. You can join 
+                    from any device, wherever you are. It’s support, structure, and encouragement; all from the comfort of your own home</p>
+                   <p><a href="virtual.html" style="color:white;">Learn More</a></p>
+            </div>
+        </div>
 
-<div id="reviews">
-    <script id="reviews" src="https://widget.trustmary.com/0bf51XHkJ"></script>
-</div>
+        <div class="flex-image-container" id="know">
+            <img src="images/Becca pink bg.jpg" alt="Example" class="flex-image">
+            <div class="flex-info">
+                <h3>Get To Know Your Organizer</h3>
+                <p style="margin-top:-20px; font-size:15px;">Meet Becca and Read Reviews</p>
+                <hr>
+                <p>With a background in compassionate customer service and a passion for mental health, I bring a kind, judgment-free approach to every project. 
+                    Organizing is very fulfilling to me, but helping you feel calm, confident, and at peace in your home is what truly brings me joy</p>
+                <p><a href="about.html" style="color:white;">Learn More</a></p>
+            </div>
+        </div>
+
+    </section>
 
         <a href="https://www.facebook.com/tidypeacefulhomes" target="_blank" class="social-button">
             <img src="images/Facebook logo.png" alt="Facebook" class="social-icon">
@@ -362,6 +112,9 @@
         <a href="https://www.instagram.com/tidypeacefulhomes/" target="_blank" class="social-button">
             <img src="images/Instagram logo.png" alt="Instagram" class="social-icon">
         </a>
+    <a href="https://nextdoor.com/pages/tidy-peaceful-homes-portsmouth-va/" target="_blank" class="social-button">
+        <img src="images/Nextdoor logo.png" alt="Nextdoor" class="social-icon"></a>
+        
     <footer>
         <p>&copy; 2025 Tidy Peaceful Homes | 
             <a href="terms_of_service.html">Terms of Service</a> | 
@@ -369,28 +122,6 @@
         </p>
         <button id="jumpToTop" onclick="scrollToTop()">⬆ Jump to Top</button>
     </footer>
-            
-        <style>
-                #jumpToTop {
-                    position: fixed;
-                    bottom: 20px;
-                    right: 20px;
-                    background-color: white;
-                    color: #83bcd6;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 10px 15px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                    display: none;
-                    z-index: 1000;
-                }
-            
-                #jumpToTop:hover {
-                    background-color: #5c8597;
-                }
-        </style>
             
     <script>
         window.onscroll = function() {
