@@ -27,275 +27,7 @@
     <title>FAQ - Tidy Peaceful Homes</title>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Tab image.png" type="image/png">
-    <style>
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #83bcd6;
-            text-align: center;
-            padding-bottom: 50px;
-        }
-        header { 
-            background: #83bcd6; 
-            color: white; 
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center; 
-            padding: 5px; 
-            padding-top: 10px; }
-        header img {
-            max-width: 200px; /* Adjust the logo size for mobile */
-            height: auto; /* Maintain aspect ratio */
-        }
-        header h1 { 
-            font-family: 'Gochi Hand', cursive; 
-            font-size: 80px; 
-            margin-top: 0; /* Revert margin-top to default */
-            position: static; /* Remove positioning for overlap */
-            z-index: auto; /* Reset z-index */
-        }
-        header h2 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 40px; 
-            margin-top: -40px; 
-        }
-        header h3 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 25px; 
-            margin-top: -20px; 
-        }
-        .section-title {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border-radius: 10px;
-            padding: 10px;
-            margin: 20px auto;
-            max-width: 1000px;
-            font-size: 20px;
-        }
-        section {
-            background-color: white;
-            padding: 10px;
-            margin: 20px auto;
-            text-align: center;
-            border: 0px solid #83bcd6;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            max-width: 1000px;
-            padding-bottom: 10px; /* Add space between sections */
-        }
-        section h2 {
-            line-height: 1.5;
-            padding: 20px;
-        }
-        .section-title {
-            display: flex;
-            color: #000000;
-            align-items: center; /* Fix alignment */
-            justify-content: center;
-            background: white;
-            border: 0px solid #83bcd6;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin-bottom: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            font-size: 20px;
-        }
-        .section-title img {
-            width: 100px;
-            height: auto;
-            margin: 0 10px; /* Ensure consistent spacing */
-        }
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            text-align: center;
-            line-height: 1.5;
-            font-size: 22px;
-            color: white;
-            background: #83bcd6; /* Change background color to match header */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .answer {
-            max-height: 0; /* Initially hidden */
-            overflow: hidden; /* Hide content that overflows */
-            transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Smooth animation */
-            padding: 0; /* No padding when hidden */
-        }
-        .answer.show {
-            max-height: 1000px; /* Set a maximum height large enough for the content */
-            padding: 10px; /* Add padding when visible */
-        }
-        .question {
-            cursor: pointer; /* Indicate that the question is clickable */
-            font-weight: bold;
-            color: white;
-        }
-        .question:hover {
-            text-decoration: underline;
-        }
-        .arrow {
-            display: inline-block;
-            transition: transform 0.3s ease; /* Smooth rotation animation */
-            margin-right: 10px; /* Add spacing between the arrow and the text */
-        }
-        .arrow.rotate {
-            transform: rotate(90deg); /* Rotate the arrow 90 degrees */
-        }
-        h3 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
-            line-height: 1.2; /* Adjust line spacing for readability */
-        }
-        hr {
-            border: none; /* Remove the default border */
-            height: 2px; /* Set the thickness of the line */
-            background-color: white; /* Set the color of the line */
-            margin: 10px auto; /* Add spacing above and below the line */
-            width: 100%; /* Set the width of the line */
-            border-radius: 0px; /* Optional: Add rounded edges */
-        }
-        footer a {
-            color: black;
-            text-decoration: none;
-        }
-        nav {
-            position: relative;
-            margin-top: 0px;
-        }
-        nav a {
-            display: inline-block;
-            background-color: #83bcd6;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            border: 1px solid white;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: white;
-            color: #83bcd6;
-        }
-        .menu-toggle {
-            display: none;
-            background-color: white;
-            color: #83bcd6;
-            font-size: 20px;
-            padding: 5px 10px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin: 20px;
-            border-color: white;
-            border-width: 0px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .menu-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .social-button {
-            border-radius: 50%; /* Optional: Make the icons circular */
-            border: none; /* Remove border */
-            padding-top: 20px; /* Adjust padding for better alignment */
-        }
-        .social-icon {
-            width: 37px; /* Make the icon fill the button */
-            height: auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            border-radius: 50%; /* Optional: Make the icons circular */
-        }
-        .social-icon:hover {
-            transform: scale(1.1); /* Slightly enlarge on hover */
-        }
-        footer { 
-            background: white; 
-            color: 000000; 
-            text-align: center; 
-            padding: 1rem; 
-            margin-top: 20px; 
-        }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-            color: white;
-        }
-        .content li {
-            margin: 5px 0;
-            color: white;
-        }
-        .content a {
-            color: white;
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-        .content a:hover {
-            color: #5c8597; /* Change to a different color on hover */
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-@media (max-width: 768px) {
-    header img {
-        max-width: 150px; /* Adjust the logo size for mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: -30px;
-    }
-    header h1 {
-        font-size: 40px; /* Reduce header font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h2 {
-        font-size: 24px; /* Adjust subheader font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h3 {
-        font-size: 20px;
-        max-width: 85%;  /* Adjust h3 font size for smaller screens */
-        margin: 0 auto; /* Center the text block */
-    }
-    .section-title {
-        padding: 0px; /* Remove padding for mobile */
-    }
-    .section-title img {
-        width: 50px; /* Adjust icon size for mobile */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .section-title h2 {
-        font-size: 24px; /* Adjust section title font size */
-        white-space: nowrap; /* Prevent text wrapping */
-    }
-    .menu-container {
-        display: flex; /* Align items horizontally */
-        align-items: center; /* Vertically center the items */
-        gap: 10px; /* Add spacing between the elements */
-    }
-    .menu-toggle {
-        display: block;
-        margin-bottom: -20px;
-    }
-    .menu-links {
-        display: none;
-        flex-direction: column;
-        align-items: left;
-        margin-top: 10px;
-    }
-    .menu-links.show {
-        display: flex;
-    }
-    nav a {
-        margin: 5px 0;
-    }
-}
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
@@ -304,13 +36,12 @@
         </div>
         <div class="menu-links" id="navMenu">
             <a href="index.html">Welcome</a>
-            <a href="services.html">Services</a>
-            <a href="packages.html">Packages</a>
+            <a href="services.html">In-Home</a>
+            <a href="virtual.html">Virtual 1:1</a>
             <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="FAQ.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-            <a href="book_now.html">Book Now</a>
-            <a href="contact.html">Contact</a>
         </div>
     </nav>
     <header>
@@ -320,7 +51,7 @@
     </header>
     <div class="section-title">
         <img src="images/emb5 left.png" alt="Icon">
-        <h2>FAQ</h2>
+        <h2>FAQ - In-Home Services</h2>
         <img src="images/emb5 right.png" alt="Icon">
     </div>
     <section>
@@ -338,8 +69,6 @@
                     <li><a href="#policies" style=" text-decoration: underline;">Policies</a></li>
                 </ul>
             </div>
-
-            <h2>Ready for a <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">session?</a></h2>
 
             <div class="content" id="trust-professionalism">
                 <h3>Trust & Professionalism</h3>
@@ -402,8 +131,6 @@
                 </div>
                 <hr>
             </div>
-            
-            <h2>Check out my <a href="gallery.html" style="color: #83bcd6; text-decoration: underline;">my work!</a></h2>
 
             <div class="content" id="cost-process">
                 <h3>Cost & Process</h3> 
@@ -454,8 +181,6 @@
                 </div>
                 <hr>
             </div>
-            
-            <h2>Ready to <a href="book_now.html" style="color: #83bcd6; text-decoration: underline;">book?</a></h2>
 
             <div class="content" id="session-logistics">
                 <h3>Session Logistics</h3> 
@@ -525,8 +250,6 @@
                 <hr>
             </div>
 
-            <h2>Check out my <a href="blog.html" style="color: #83bcd6; text-decoration: underline;">blog!</a></h2>
-
             <div class="content" id="special-circumstances">
                 <h3>Special Circumstances</h3> 
                 <hr>
@@ -569,8 +292,6 @@
                 <hr> 
             </div>
 
-            <h2>Learn more about <a href="services.html" style="color: #83bcd6; text-decoration: underline;">how I can help you</a>  find peace in your home</h2>
-
             <div class="content" id="support-accessibility">
                 <h3>Support & Accessibility</h3>
                 <hr>
@@ -609,8 +330,6 @@
                 </div>
                 <hr>
             </div>
-
-            <h2>Check out your <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">package</a> options</h2>
 
             <div class="content" id="policies">
                 <h3>Policies</h3> 
@@ -655,6 +374,8 @@
     <a href="https://www.instagram.com/tidypeacefulhomes/" target="_blank" class="social-button">
         <img src="images/Instagram logo.png" alt="Instagram" class="social-icon">
     </a>
+    <a href="https://nextdoor.com/pages/tidy-peaceful-homes-portsmouth-va/" target="_blank" class="social-button">
+        <img src="images/Nextdoor logo.png" alt="Nextdoor" class="social-icon"></a>
 
     <footer>
         <p>&copy; 2025 Tidy Peaceful Homes | 
@@ -663,29 +384,7 @@
         </p>
         <button id="jumpToTop" onclick="scrollToTop()">⬆ Jump to Top</button>
     </footer>
-            
-        <style>
-                #jumpToTop {
-                    position: fixed;
-                    bottom: 20px;
-                    right: 20px;
-                    background-color: white;
-                    color: #83bcd6;
-                    border: none;
-                    border-radius: 5px;
-                    padding: 10px 15px;
-                    font-size: 16px;
-                    cursor: pointer;
-                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                    display: none;
-                    z-index: 1000;
-                }
-            
-                #jumpToTop:hover {
-                    background-color: #5c8597;
-                }
-        </style>
-            
+       
     <script>
         window.onscroll = function() {
             const button = document.getElementById("jumpToTop");
