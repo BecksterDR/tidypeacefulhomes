@@ -24,241 +24,10 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Tidy Peaceful Homes</title>
+    <title>In-Home Services - Tidy Peaceful Homes</title>
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Tab image.png" type="image/png">
-    <style>
-        body {
-            font-family: 'Josefin Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #83bcd6;
-            text-align: center;
-            padding-bottom: 50px;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-        header { 
-            background: #83bcd6; 
-            color: white; 
-            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-            text-align: center; 
-            padding: 5px; 
-            padding-top: 10px; }
-        header img {
-            max-width: 200px; /* Adjust the logo size for mobile */
-            height: auto; /* Maintain aspect ratio */
-        }
-        header h1 { 
-            font-family: 'Gochi Hand', cursive; 
-            font-size: 80px; 
-            margin-top: 0; /* Revert margin-top to default */
-            position: static; /* Remove positioning for overlap */
-            z-index: auto; /* Reset z-index */
-        }
-        header h2 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 40px; 
-            margin-top: -40px; 
-        }
-        header h3 { 
-            font-family: 'Josefin Sans', cursive; 
-            font-size: 25px; 
-            margin-top: -20px; 
-        }
-        section {
-            background-color: white;
-            padding: 10px;
-            margin: 20px auto;
-            text-align: center;
-            border: 0px solid #83bcd6;
-            border-radius: 15px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            max-width: 1000px;
-            padding-bottom: 10px; /* Add space between sections */
-        }
-        section h2 {
-            line-height: 1.5;
-            padding: 20px;
-        }
-        .section-title {
-            display: flex;
-            color: #000000;
-            align-items: center; /* Fix alignment */
-            justify-content: center;
-            background: white;
-            border: 0px solid #83bcd6;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            padding: 10px;
-            margin-bottom: 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            font-size: 20px;
-        }
-        .section-title img {
-            width: 100px;
-            height: auto;
-            margin: 0 10px; /* Ensure consistent spacing */
-        }
-        .content {
-            max-width: 900px;
-            margin: 20px auto;
-            text-align: center;
-            line-height: 1.5;
-            font-size: 22px;
-            color: white;
-            background: #83bcd6; /* Change background color to match header */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-            color: white;
-        }
-        .content li {
-            margin: 5px 0;
-            color: white;
-        }
-        .content a {
-            color: white;
-            text-decoration: underline;
-            transition: color 0.3s;
-        }
-        .content a:hover {
-            color: #5c8597; /* Change to a different color on hover */
-        }
-        h3 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to the text */
-            line-height: 1.2; /* Adjust line spacing for readability */
-        }
-        hr {
-            border: none; /* Remove the default border */
-            height: 2px; /* Set the thickness of the line */
-            background-color: white; /* Set the color of the line */
-            margin: 10px auto; /* Add spacing above and below the line */
-            width: 100%; /* Set the width of the line */
-            border-radius: 0px; /* Optional: Add rounded edges */
-        }
-        footer a {
-            color: black;
-            text-decoration: none;
-        }
-        nav {
-            position: relative;
-            margin-top: 0px;
-        }
-        nav a {
-            display: inline-block;
-            background-color: #83bcd6;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            margin: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            border: 1px solid white;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: white;
-            color: #83bcd6;
-        }
-        .menu-toggle {
-            display: none;
-            background-color: white;
-            color: #83bcd6;
-            font-size: 20px;
-            padding: 5px 10px;
-            border-radius: 20px;
-            cursor: pointer;
-            margin: 20px;
-            border-color: white;
-            border-width: 0px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-        }
-        .menu-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .social-button {
-            border-radius: 50%; /* Optional: Make the icons circular */
-            border: none; /* Remove border */
-            padding-top: 20px; /* Adjust padding for better alignment */
-        }
-        .social-icon {
-            width: 37px; /* Make the icon fill the button */
-            height: auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            border-radius: 50%; /* Optional: Make the icons circular */
-        }
-        .social-icon:hover {
-            transform: scale(1.1); /* Slightly enlarge on hover */
-        }
-        footer { 
-            background: white; 
-            color: 000000; 
-            text-align: center; 
-            padding: 1rem; 
-            margin-top: 20px; 
-        }
-@media (max-width: 768px) {
-    header img {
-        max-width: 150px; /* Adjust the logo size for mobile */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: -30px;
-    }
-    header h1 {
-        font-size: 40px; /* Reduce header font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h2 {
-        font-size: 24px; /* Adjust subheader font size */
-        padding-bottom: 10px; /* Add padding for spacing */
-    }
-    header h3 {
-        font-size: 20px;
-        max-width: 85%;  /* Adjust h3 font size for smaller screens */
-        margin: 0 auto; /* Center the text block */
-    }
-    .section-title {
-        padding: 0px; /* Remove padding for mobile */
-    }
-    .section-title img {
-        width: 50px; /* Adjust icon size for mobile */
-        height: auto; /* Maintain aspect ratio */
-    }
-    .section-title h2 {
-        font-size: 24px; /* Adjust section title font size */
-        white-space: nowrap; /* Prevent text wrapping */
-    }
-    .menu-container {
-        display: flex; /* Align items horizontally */
-        align-items: center; /* Vertically center the items */
-        gap: 10px; /* Add spacing between the elements */
-    }
-    .menu-toggle {
-        display: block;
-        margin-bottom: -20px;
-    }
-    .menu-links {
-        display: none;
-        flex-direction: column;
-        align-items: left;
-        margin-top: 10px;
-    }
-    .menu-links.show {
-        display: flex;
-    }
-    nav a {
-        margin: 5px 0;
-    }
-}
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <nav>
@@ -267,13 +36,12 @@
         </div>
         <div class="menu-links" id="navMenu">
             <a href="index.html">Welcome</a>
-            <a href="services.html">Services</a>
-            <a href="packages.html">Packages</a>
+            <a href="services.html">In-Home</a>
+            <a href="virtual.html">Virtual 1:1</a>
             <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="FAQ.html">FAQ</a>
-            <a href="blog.html">Blog</a>
-            <a href="book_now.html">Book Now</a>
-            <a href="contact.html">Contact</a>
         </div>
     </nav>
     <header>
@@ -283,48 +51,57 @@
     </header>
     <div class="section-title">
         <img src="images/emb2 left.png" alt="Icon">
-        <h2>Services</h2>
+        <h2>In-Home Services</h2><br>
         <img src="images/emb2 right.png" alt="Icon">
     </div>
     <section>
+        <p><a href="#services" style="color:black;">Services</a> | <a href="#packages" style="color:black;">Packages</a> | <a href="#areas" style="color:black;">Spaces Serviced</a></p>
+    </section>
+    <section>
         <h3><span style="text-shadow: none;">Serving Virginia Beach, Smithfield, Suffolk, Newport News, Chesapeake, and all the surrounding areas of the 757</span></h3> 
-        <h3><span style="text-shadow: none;">Looking for <a href="packages.html" style="color: #83bcd6; text-decoration: underline;">pricing?</a></span> </h3>
-
-        <div class="content" id="free-cons">      
-            <h3>💖FREE <a href="book_now.html">Consultations</a></h3>
-            <hr>
-                <p>Before you book a session, we'll chat about your space, your needs, and your goals to determine the best plan of action for our time together</p>
-        </div>   
     
-        <div class="content" id="in-person">
-            <h3>🧹In-Person Decluttering Coaching & Organization</h3>
-            <hr>
-            <p>I'll travel to your home and work alongside you to declutter and organize your space. Together, we'll sort items, decide what to keep, toss, or donate</p>
-            <p>We'll design personalized storage systems that make the most of what you already have, tailored to your space and style. If necessary, we'll decide together on 
-                what new items to purchase that fit your needs and budget</p>
-            <p>We'll organize your items in a way that works for your daily life, making your space feel calm, functional, 
-                and truly yours</p>
+        <div class="flex-image-container">
+            <img src="images/bedroom ai.jpg" alt="Example" class="flex-image">
+            <div class="flex-info" id="services">
+                <h3>Decluttering Coaching and Organizing</h3>
+                <p style="margin-top:-20px; font-size:15px;">Professional Services</p>
+                <hr>
+                    <ul>
+                        <li>I’ll come to your home and work with you to declutter and organize. I’ll gently guide you with tips and support</li>
+                        <li>Together, we’ll sort items and decide what to keep, toss, or donate</li>
+                        <li>We'll set up personalized storage using what you already have. If needed, we’ll choose new items that fit your style and budget</li>
+                        <li>We’ll organize everything in a way that supports your daily life</li>
+                        <li>Follow-up sessions, in-person or virtual, are available to help you maintain a calm, functional space</li>
+                    </ul>
+                    <p><a href="gallery.html" style="color:white;">Check Out My Work</a></p>
+            </div>
         </div>
 
-        <h3><span style="text-shadow: none;">How <a href="FAQ.html#involved" style="color: #83bcd6; text-decoration: underline;">involved</a> do I need to be?</span> </h3>
-
-        <div class="content" id="virtual">
-            <h3>💻Virtual Decluttering Coaching*</h3>
+        <div class="flex-image-container reverse">
+            <img src="images/a neatly organized closet with a mix of plain clothing and clothing that has patterns .jpg" alt="Example" class="flex-image">
+            <div class="flex-info" id="packages">
+                <h3>Packages</h3>
+                <p style="margin-top:-20px; font-size:15px;">Flexible Options</p>
             <hr>
-                <p>A 1-3 hour session were we can meet virtually to declutter and organize your space together. I'll guide you through the process, providing tips and support 
-                    along the way</p>
-                <p><span style="font-size:15px;">*This service is not therapy, counseling, or a substitute for mental health treatment. I do not diagnose or treat mental 
-                    health conditions, and I encourage clients to seek support from a licensed professional for those needs.</span></p>
+                <ul>
+                    <li>Quick Refresh, $150: one session of up to 3 hours</li>
+                    <li>Space Reset, $300: one session of up to 6 hours</li>
+                    <li>Total Transformation, $600: two sessions of up to 6 hours each</li>
+                    <li>Custom Package: Don't see a package that fits your needs? I will customize one just for you during your free consultation </li>
+                </ul>
+                
+            <p style="font-size: 15px;">Every project is unique and requires a FREE, personalized consultation.
+                <br>How quickly we can declutter and organize your space depends on a few things; the degree of clutter, how quickly you make decisions, how hands-on you 
+                want to be, and your available storage. Once we see your space and assess your needs we are able to determin which package would be best for you </p>
+            <a href="contact.html#consult" style="color:white;">Schedule a Free Consultation</a>
+            </div>
         </div>
 
-        <div class="content" id="follow-up">
-            <h3>🔄Follow-Up Services</h3>
-            <hr>
-                <p>After our initial session, I can help you maintain your space with in-person or virtual follow-up sessions. We can also schedule regular check-ins to keep your home organized and peaceful</p>
-        </div>
-
-        <div class="content" id="spaces">
-            <h3>✨Spaces Serviced</h3>
+        <div class="flex-image-container">
+            <img src="images/a neatly organized bathroom with a container of toothbrushes and toothpaste visible on the counter by the sink and a plastic soap dispenser by the sink.jpg" alt="Example" class="flex-image">
+            <div class="flex-info" id="areas">
+                <h3>Spaces I Service</h3>
+                <p style="margin-top:-20px; font-size:15px;">Let's Get It Tidy!</p>
             <hr>
                 <ul>
                     <li>Kitchens & Pantries</li>
@@ -339,11 +116,12 @@
                     <li>*Garages & Workshops</li>
                     <li>And More!</li>
                 </ul>
-            <p>*<i>Most</i> garages and workshops. I don't service areas with large or dangerous equipment.</p>
-                <p> I don’t service attic spaces or outdoor spaces</p>
+            <p style="font-size: 15px;">*<i>Most</i> garages and workshops. I don't service areas with large or dangerous equipment.</p>
+                <p style="font-size: 15px;"> I don’t service attic spaces or outdoor spaces</p>
+                    <p><a href="contact.html#consult" style="color:white;">Book Your Free Consultation</a></p>
+            </div>
         </div>
 
-        <h2>Still have <a href="FAQ.html" style="color: #83bcd6; text-decoration: underline;">questions?</a></h2>
     </section>
     
     <a href="https://www.facebook.com/tidypeacefulhomes" target="_blank" class="social-button">
@@ -352,6 +130,8 @@
     <a href="https://www.instagram.com/tidypeacefulhomes/" target="_blank" class="social-button">
         <img src="images/Instagram logo.png" alt="Instagram" class="social-icon">
     </a>
+    <a href="https://nextdoor.com/pages/tidy-peaceful-homes-portsmouth-va/" target="_blank" class="social-button">
+        <img src="images/Nextdoor logo.png" alt="Nextdoor" class="social-icon"></a>
 
         <footer>
             <p>&copy; 2025 Tidy Peaceful Homes | 
@@ -360,28 +140,6 @@
             </p>
             <button id="jumpToTop" onclick="scrollToTop()">⬆ Jump to Top</button>
         </footer>
-                
-            <style>
-                    #jumpToTop {
-                        position: fixed;
-                        bottom: 20px;
-                        right: 20px;
-                        background-color: white;
-                        color: #83bcd6;
-                        border: none;
-                        border-radius: 5px;
-                        padding: 10px 15px;
-                        font-size: 16px;
-                        cursor: pointer;
-                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-                        display: none;
-                        z-index: 1000;
-                    }
-                
-                    #jumpToTop:hover {
-                        background-color: #5c8597;
-                    }
-            </style>
                 
         <script>
             window.onscroll = function() {
