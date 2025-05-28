@@ -424,6 +424,7 @@ footer {
     }
     .section-title {
         padding: 0px;
+        margin-top: -30px;
     }
     .section-title img {
         width: 50px;
