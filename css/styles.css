@@ -355,9 +355,26 @@ footer {
     margin: 0px 0;
     border-radius: 10px;
 }
+.gallery-section {
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    border: 0px solid #83bcd6;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+}
+.fade-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+  gap: 0px 0px; /* row gap, column gap */
+  justify-items: center;
+}
 .fade-container {
     position: relative;
-    max-width: 600px;
+    width: 90vw;
+    max-width: 400px;
     aspect-ratio: 4 / 5;
     overflow: hidden;
     border-radius: 12px;
@@ -386,7 +403,12 @@ footer {
     25%, 75% { opacity: 1; }
 }
 @media (max-width: 480px) {
-    .fade-container { aspect-ratio: 4 / 5; }
+  .fade-grid {
+    grid-template-columns: 1fr; /* 1 column for small screens */
+  }
+    .fade-container { 
+    aspect-ratio: 4 / 5;
+}
 }
 .modal {
     display: none;
@@ -462,8 +484,12 @@ footer {
     .section-row {
         display: flex;
         flex-direction: column;
-        gap: 0px;
+        gap: 20px;
     }
+    .section-row section {
+    flex: 1;
+    background-color: white;
+}
     section img {
         max-width: 90%;
         height: auto;
