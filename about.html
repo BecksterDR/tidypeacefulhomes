@@ -28,6 +28,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="icon" href="images/Tab image.png" type="image/png">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        @media (max-width: 600px) {
+  #why .flex-image {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: auto;
+    max-height: 350px; /* adjust as needed */
+    border-radius: 12px;
+  }
+}
+    </style>
 </head>
 <body>
     <nav>
@@ -81,9 +93,8 @@
             </div>
         </div>
 
-        <div class="flex-image-container reverse" id="social">
-            <img src="images/a person browsing facebook on their phone and we see their phone through their pov.jpg" alt="Example" class="flex-image">
-            <div class="flex-info" id="packages">
+
+            <div class= "content" style= "max-width: 400px;" id="social">
                 <h3>Our Socials</h3>
             <hr>
                 <ul>
@@ -94,8 +105,10 @@
                 <a href="blog.html" style="color:white; font-size: 15px;">Check Out My Blog</a>
             </div>
         </div>
-        
-        <div class="content" id="why">
+
+        <div class="flex-image-container" id="why">
+            <img src="images/becca red.png" alt="Example" class="flex-image">
+            <div class="flex-info">
             <h3>Why Tidy Peaceful Homes?</h3>
             <hr>
             <p><i><strong>I understand</strong></i> that every home has a story and that life gets busy, especially if you're 
