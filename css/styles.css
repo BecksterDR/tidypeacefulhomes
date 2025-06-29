@@ -368,14 +368,14 @@ footer {
 }
 .fade-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columns */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
   gap: 0px 0px; /* row gap, column gap */
   justify-items: center;
 }
 .fade-container {
     position: relative;
     width: 90vw;
-    max-width: 400px;
+    max-width: 300px;
     aspect-ratio: 4 / 5;
     overflow: hidden;
     border-radius: 12px;
