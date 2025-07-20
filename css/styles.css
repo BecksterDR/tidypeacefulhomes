@@ -368,8 +368,8 @@ footer {
 }
 .fade-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* 3 columns */
-  gap: 0px 0px; /* row gap, column gap */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px 20px; /* row gap, column gap */
   justify-items: center;
 }
 .fade-container {
