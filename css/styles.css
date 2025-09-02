@@ -54,6 +54,10 @@ section {
   flex-direction: row;
   gap: 20px;
 }
+.section-row section {
+    min-width: 20%;
+    max-width: 30%;
+}
 section img {
     max-width: 950px;
     height: auto;
@@ -486,6 +490,11 @@ footer {
         flex-direction: column;
         gap: 0px;
     }
+    
+.section-row section {
+    min-width: 90%;
+    max-width: 90%;
+}
     section img {
         max-width: 90%;
         height: auto;
