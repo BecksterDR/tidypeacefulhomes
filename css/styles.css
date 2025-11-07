@@ -18,20 +18,20 @@ header {
     padding-top: 10px;
 }
 header img {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 header h1 { 
-    font-family: 'Gochi Hand', cursive; 
-    font-size: 60px; 
+    font-family: 'WindSong', cursive; 
+    font-size: 40px; 
     margin-top: -40px;
     position: static;
     z-index: auto;
 }
 header h2 { 
     font-family: 'Josefin Sans', cursive; 
-    font-size: 30px; 
-    margin-top: -40px; 
+    font-size: 25px; 
+    margin-top: -20px; 
 }
 header h3 { 
     font-family: 'Josefin Sans', cursive; 
@@ -86,6 +86,29 @@ section h2 {
     width: 100px;
     height: auto;
     margin: 0 10px;
+}
+.announcement {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    background: #e67b9b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: wiggle-pause 4s infinite;
+}
+@keyframes wiggle-pause {
+    0% { transform: rotate(0deg); }
+    5% { transform: rotate(-3deg); }
+    10% { transform: rotate(3deg); }
+    15% { transform: rotate(-3deg); }
+    20% { transform: rotate(3deg); }
+    25% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
 }
 .content {
     max-width: 900px;
@@ -470,8 +493,8 @@ footer {
         margin-top: -20px;
     }
     header h1 {
-        font-size: 40px;
-        padding-bottom: 10px;
+        font-size: 30px;
+        padding-bottom: -20px;
     }
     header h2 {
         font-size: 24px;
@@ -540,4 +563,20 @@ footer {
         margin-bottom: -50px;
         z-index: 10;
     }
+    .announcement {
+    max-width: 300px;
+    margin: 20px auto;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    background: #e67b9b;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    animation: wiggle-pause 4s infinite;
+}
 }
