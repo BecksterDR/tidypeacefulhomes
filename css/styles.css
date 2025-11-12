@@ -55,8 +55,8 @@ section {
   gap: 20px;
 }
 .section-row section {
-    min-width: 20%;
-    max-width: 30%;
+    min-width: 30%;
+    max-width: 45%;
 }
 section img {
     max-width: 950px;
