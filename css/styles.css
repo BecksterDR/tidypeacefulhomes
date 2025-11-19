@@ -88,7 +88,7 @@ section h2 {
     margin: 0 10px;
 }
 .announcement {
-    max-width: 500px;
+    max-width: 600px;
     margin: 20px auto;
     text-align: center;
     line-height: 1.5;
@@ -580,3 +580,4 @@ footer {
     animation: wiggle-pause 4s infinite;
 }
 }
+
